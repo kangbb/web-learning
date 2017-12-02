@@ -7,6 +7,6 @@ window.onload = function () {
 function doUpdate(num){
     document.getElementById("setTime").innerHTML = num;
     if (num == 0){
-        window.location='http://localhost:8080/';
+        window.location='http://localhost:8000/';
     }
 }

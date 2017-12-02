@@ -35,8 +35,8 @@ function start(route, handle) {
             route(handle, pathname, para, response);
         }
     }
-    http.createServer(onRequest).listen(8080);
-    console.log("Server has started.");
+    http.createServer(onRequest).listen(8000);
+    console.log("Server has started. Visit it by http://localhost:8000.");
 }
 
 exports.start = start;
