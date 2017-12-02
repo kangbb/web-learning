@@ -55,10 +55,9 @@ function filehandler(para, response){
     }
 }
 
-function posthanler(para, response) {
+function posthandler(para, response) {
     var path = "public/data/data.json";
     var content;
-
     //由post跳转，输出post内容
     //否则，输出文件的最后一个数据
     //当然，这样有bug,后续再改进
@@ -173,4 +172,4 @@ function fillhtml(data, para, response){
 exports.start = start;
 exports.filehandler = filehandler;
 exports.notfound = notFound;
-exports.posthandler = posthanler;
+exports.posthandler = posthandler;
