@@ -112,39 +112,38 @@ function query(para){
     }else{
         data = JSON.parse(data);
     }
-
+    console.log(data);
     for(var item in data) {
+        is_equal = true;
         for (var key in para) {
-            is_equal = false;
             switch (key) {
                 case 'username':
-                    if (data[item]["username"] == para["username"]) {
-                        is_equal = true;
+                    if (data[item]["username"] != para["username"]) {
+                        is_equal = false;
                     }
                     break;
                 case 'id':
-                    if (data[item]["id"] == para["id"]) {
-                        is_equal = true;
+                    if (data[item]["id"] != para["id"]) {
+                        is_equal = false;
                     }
                     break;
                 case 'phone':
-                    if (data[item]["phone"] == para["phone"]) {
-                        is_equal = true;
+                    if (data[item]["phone"] != para["phone"]) {
+                        is_equal = false;
                     }
                     break;
                 case 'email':
-                    if (data[item]["email"] == para["email"]) {
-                        is_equal = true;
+                    if (data[item]["email"] != para["email"]) {
+                        is_equal = false;
                     }
                     break;
                 default:
                     return null;
             }
-            if (!is_equal) {
-                return null;
-            }
         }
-        return data[item];
+        if(is_equal){
+            return data[item];
+        }
     }
 }
 
