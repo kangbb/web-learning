@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../public/stylesheets/index.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" rel="script" src="../public/javascript/index.js"></script>
+</head>
+<body>
+<h1>注  册</h1>
+<div id="user_info">
+    <form id="myform" action="http://localhost:8080/detail" method="post">
+            <label>用户名:</label>
+            <input type="text" id="username" name="username" value="" maxlength="18" placeholder="6~18位英文字母、数字、下划线"><br/>
+            <p id="usrErr"></p>
+
+            <label>学号:</label>
+            <input type="text" id="id" name="id" value="" maxlength="8" placeholder="8位数字,不能以0开头"><br/>
+            <p id="idErr"></p>
+
+            <label>电话:</label>
+            <input type="text" id="phone" name="phone" value="" maxlength="11" placeholder="11位数字，不能以0开头"><br/>
+            <p id="phoneErr"></p>
+
+            <label>邮箱:</label>
+            <input type="text" id="email" name="email" value="" maxlength="80" placeholder="example@123.com"><br/>
+            <p id="emailErr"></p>
+
+        <div id="function_button">
+            <input type="reset" value="重置">
+            <input type="button" value="提交">
+        </div>
+    </form>
+</div>
+</body>
+</html>

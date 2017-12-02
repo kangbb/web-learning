@@ -1,0 +1,41 @@
+h1,h2{
+    background-color: #F0F0F0;
+    font-family: "Century Gothic", Futura, Verdana, sans-serif;
+    font-size: 22pt;
+    color:  #A4A400;
+    text-align: center;
+    text-decoration:underline;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}
+h2{
+    font-size: 18pt;
+    font-weight:normal;
+    text-align: left;
+}
+/*为了去除图片链接下划线，另定义span为两个文字链接添加下划线*/
+span{
+    text-decoration: underline;
+}
+body{
+    background-color: white;
+    font-family: Georgia, Garamond, serif;
+    font-size:11pt;
+    color: #404040;
+    background-attachment: fixed;
+    background-image: url("http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+}
+a{
+    text-decoration: none;
+    color: #A4A400;
+}
+img{
+    border: none;
+}
+ul {
+    list-style-image: url(http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif);
+}
+blockquote {
+    background-color: #FFFFC8;
+    font-style: italic;
+}

@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 华文细黑;
+    src: url("./font/华文细黑.ttf");
+}
+body{
+    font-family: 华文细黑;
+}
+h1{
+    text-align: center;
+}
+
+p{
+    margin: 5px auto;
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
+    padding-left: 15px;
+}
+.Function{
+    margin-left:auto;
+    margin-right: auto;
+    padding: 0;
+    width: 560px;
+    font-size: 16px;
+}
+#s_e_game{
+    outline: none;
+    background-color: white;
+    border: solid 1px #B5B5B5;
+    border-radius: 5px;
+    margin-left: 140px;
+    margin-right: 40px;
+}
+
+#s_e_game:hover{
+    background-color: rgba(181, 181, 181, 0.3);
+}
+#time, #score{
+    width: 30px;
+    border: solid 1px #B5B5B5;
+    padding-left: 2px;
+    margin-top: 6px;
+    margin-right: 100px;
+}
+
+#state{
+    width: 130px;
+    border: solid 1px #B5B5B5;
+    padding-left: 5px;
+    margin: 6px 55px 6px 140px;
+}
+
+span{
+    margin-top: 6px;
+}
+
+
+#GameArea{
+    margin: 20px auto;
+    width: 300px;
+    height: 204px;
+    border-style: solid none solid none;
+    border-width: 1px;
+    border-color: #B5B5B5;
+}
+
+.mole_style{
+    margin: 8px 6px;
+    padding: 5px;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: solid 1px #B5B5B5;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 1px #B5B5B5;
+    outline: none;
+}
+.mole_appear{
+    margin: 8px 6px;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: solid 6px lightskyblue;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 1px #B5B5B5;
+    outline: none;
+}
+
+.Instructions{
+    margin-left:auto;
+    margin-right: auto;
+    padding: 0;
+    width: 720px;
+    font-size: 16px;
+}
+ul span{
+    font-weight: bold;
+}

@@ -1,0 +1,109 @@
+body, #banner, .w3c {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-image: url(./src/background.png);
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+}
+
+#banner{
+    height: 50px;
+    text-align: center;
+    background: url(./src/bannerbackground.png) repeat-x;
+}
+/*页面中间顶部的标题*/
+h1 {
+    text-align: center;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 24pt;
+    font-weight: bold;
+}
+/*页面中间主要部分的框架设置*/
+#main{
+    border: 4px solid gray;
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*电影介绍块结构*/
+.right{
+    background-color: #A2B964;
+    float: right;
+    margin-right: 0;
+    width: 250px;
+}
+/*电影信息*/
+.information{
+    position: relative;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+dt{
+    font-weight: bold;
+    margin-top: 1em;
+}
+/*评论区块结构*/
+.left{
+    width: 550px;
+    height: 83px;
+    background: url(./src/rottenbackground.png) repeat-x;
+    background-size: auto 83px;
+}
+.rotten_32{
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+    display: inline;
+    vertical-align: 13px;
+}
+.rotten_88{
+    font-size: 8pt;
+    color: white;
+    display: inline;
+    vertical-align: 13px;
+}
+.comments_left{
+    margin-left: 2%;
+    /*块级框的左边*/
+    float: left;
+    width: 47%;
+}
+.comments_right{
+    margin-left: 51%;
+    width: 47%;
+}
+.comment{
+    overflow: hidden;
+    background-color: #E1D697;
+    border: 2px solid gray;
+    font-weight: bold;
+    padding: 8px;
+}
+.name{
+    padding: 0;
+    margin-bottom: 3em;
+}
+.image{
+    border: none;
+    float: left;
+    margin-right: 5px;
+}
+/*评论页数*/
+.bottom{
+    background-color: #A2B964;
+    padding: 5px;
+    text-align: center;
+    clear: right;
+    margin-bottom: 0;
+}
+/*wc3图片*/
+.w3c{
+    margin-bottom: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}

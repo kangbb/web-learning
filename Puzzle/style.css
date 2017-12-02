@@ -1,0 +1,124 @@
+#gameinfo{
+    height: 90px;
+    width: 355px;
+    margin: 5px auto;
+}
+/*the name of the game*/
+h1{
+	text-align: center;
+}
+/*number of step*/
+#state{
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    font-size: 20px;
+    color: red;
+    display: inline-block;
+}
+span #label{
+    margin-left:40px;
+    font-size: 22px;
+}
+input{
+    border: 1px solid lightgray;
+    margin-left: 5px;
+	border-radius: 5px;
+	font-size: 22px;
+    text-align: center;
+	width: 40px;
+}
+/*the box of puzzles*/
+#position{
+	position: relative;
+	margin: 20px auto auto;
+	height: 355px;
+	width: 355px;
+	/*border: 1px solid lightgray;*/
+}
+
+#abutton{
+	margin: 20px auto auto;
+	text-align: center;
+}
+#abutton button{
+	background-color: #4285F6;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 10px 10px 10px;
+	box-shadow: 5px 5px 5px gray;
+}
+#abutton button:hover{
+	-webkit-transform :scale(1.05);
+	-moz-transform :scale(1.05);
+	-o-transform :scale(1.05);
+}
+/*preference picture*/
+#picture{
+	border: 1px solid lightgray;
+	width: 150px;
+	height: 150px;
+}
+#preview{
+	position: absolute;
+	top: 55%;
+	left: 20%;
+}
+h2{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+}
+/*fifteen pictures of the puzzle*/
+#position button{
+	position: absolute;
+	background-image: url("image/panda.jpg");
+	width: 88px;
+	height: 88px;
+}
+/*them small picture enlarge when mouseOver*/
+#position button:hover{
+	-webkit-transform :scale(1.05);
+	-moz-transform :scale(1.05);
+	-o-transform :scale(1.05);
+}
+/*The initial position of fifteen pictures*/
+#puzzle1 { background-position: 0 0;}
+#puzzle2 { background-position: -88px 0;}
+#puzzle3 { background-position: -176px 0;}
+#puzzle4 { background-position: 100% 0;}
+#puzzle5 { background-position: 0 -88px;}
+#puzzle6 { background-position: -88px -88px;}
+#puzzle7 { background-position: -176px -88px;}
+#puzzle8 { background-position: 100% -88px;}
+#puzzle9 { background-position: 0 -176px;}
+#puzzle10 { background-position: -88px -176px;}
+#puzzle11 { background-position: -176px -176px;}
+#puzzle12 { background-position: 100% -176px;}
+#puzzle13 { background-position: 0 -264px;}
+#puzzle14 { background-position: -88px -264px;}
+#puzzle15 { background-position: -176px -264px;}
+
+/*position in box of the fifteen pictures*/
+.block1, .block2, .block3, .block4, .block5, .block6, .block7, .block8,
+.block9, .block10, .block11, .block12, .block13, .block14, .block15{
+	position: absolute;
+}
+.block1{ left: 0; top: 0;}
+.block2{ left: 89px; top: 0;}
+.block3{ left: 178px; top: 0;}
+.block4{ left: 267px; top: 0;}
+.block5{ left: 0; top: 89px;}
+.block6{ left: 89px; top: 89px;}
+.block7{ left: 178px; top: 89px;}
+.block8{ left: 267px; top: 89px;}
+.block9{ left: 0; top: 178px;}
+.block10{ left: 89px; top: 178px;}
+.block11{ left: 178px; top: 178px;}
+.block12{ left: 267px; top: 178px;}
+.block13{ left: 0; bottom: 0;}
+.block14{ left: 89px; bottom: 0;}
+.block15{ left: 178px; bottom: 0;}
+.block16{ left: 267px; bottom: 0;}

@@ -1,0 +1,50 @@
+body{
+    background: url("../images/background.jpg") no-repeat fixed;
+    background-size: 100% 100%;
+}
+h1{
+    margin: 50px auto 20px auto;
+    font-size: 28px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#user_info{
+    margin: auto;
+    width: 400px;
+    height: auto;
+}
+
+form label{
+    margin-left: 15px;
+    width: 60px;
+    display:inline-block;
+    text-align: right;
+}
+form #username, #id, #phone, #email{
+    margin: 0 15px;
+    padding-left: 5px;
+    width: 220px;
+    height: 25px;
+    display: inline-block;
+}
+form #function_button{
+    margin: 10px auto auto 130px;
+    padding: 0;
+    width: 150px;
+}
+#function_button input{
+    margin: 0 5px;
+    width: 60px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#usrErr, #idErr, #phoneErr, #emailErr{
+    margin: 0 0 0 95px;
+    padding: 0;
+    height: 20px;
+    font-size: 12px;
+    color: red;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fifteen puzzle</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="puzzle.js" type="text/javascript"></script>
+	</head>
+	<body>
+    <div id="gameinfo">
+        <h1>拼图游戏</h1>
+        <p id="state"></p>
+        <span id="label">步数</span>
+        <input id="step" value="0" onfocus="this.blur()">
+    </div>
+
+    <div id="position"></div>
+    <div id="abutton"><button id="play">重新开始</button></div>
+    <div id="preview">
+        <img src="image/panda.jpg" alt="" id="picture">
+        <h2>效果图</h2>
+    </div>
+    </body>
+</html>

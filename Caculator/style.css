@@ -1,0 +1,140 @@
+@font-face
+{
+    font-family: 方正喵呜体;
+    src: url("./font/方正喵呜体.ttf");
+}
+
+body{
+    background-color: rgb(197,176, 155);
+}
+.container {
+    margin: 50px  auto auto auto;
+    width: 400px;
+    height: 290px;
+    position: relative;
+}
+
+h1 {
+    font-family: 方正喵呜体;
+    font-size: 36px;
+    letter-spacing: 9px;
+    color: aquamarine;
+    text-align: center;
+}
+
+.calculator {
+    margin: auto;
+    padding: 0;
+    width: auto;
+    height: auto;
+    border: 2px #9CD2EA solid;
+    border-radius: 5px;
+    background-color: #9CD2EA;
+    box-shadow: 0 5px #009de4, 0 10px 15px rgba(0, 0, 0, 0.2);
+    float: left;
+    display: inline-block;
+}
+
+.output{
+    width: 100%;
+    height: 80px;
+    /*border: solid 1px blue;*/
+    position: relative;
+}
+#error, #screen{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0;
+    position: absolute;
+}
+#error{
+    font-family: 方正喵呜体;
+    font-size: 22px;
+    margin-top: 10px;
+    width: 366px;
+    height: 20px;
+    text-align: center;
+    color: #F68991;
+    letter-spacing: 5px;
+/*    border: solid 1px red;*/
+}
+
+#screen{
+    color: white;
+    font-size: 18px;
+    text-align: right;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);;
+    letter-spacing: 1px;
+
+    margin-top: 35px;
+    width: 350px;
+    height: 35px;
+    padding-right: 7px;
+    padding-left: 7px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    border: 0;
+    box-shadow: inset 0 4px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+    position: absolute;
+}
+
+.func_button{
+    width: 375px;
+    height: auto;
+    margin: auto 10px 10px 10px;
+    padding: 0;
+    position: relative;
+}
+
+.buttonStyle{
+    font-size: 18px;
+    color: #888888;
+    font-weight: bold;
+
+    width: 74px;
+    height: 35px;
+    background-color: white;
+    margin:5px 8px;
+    padding: 0;
+    border-radius: 3px;
+    border: none white;
+    box-shadow: 0 2px gray;
+    position: relative;
+}
+
+.buttonStyle:hover {
+    color: white;
+    background-color: rgba(107, 84, 217, 0.5);
+    box-shadow: 0 2px rgba(107, 84, 217, 0.8);
+}
+
+.precision{
+    width: 50px;
+    height: 10px;
+    margin-top: 20px;
+    margin-left: 420px;
+    float:right;
+    position: absolute;
+}
+label{
+    font-family: 方正喵呜体;
+    font-size: 22px;
+    color: #DB8038;
+}
+select{
+    width: 40px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #DB8038;
+    color: white;
+}
+
+img{
+    margin: 0 auto auto auto;
+    width: 400px;
+    height: 108px;
+}

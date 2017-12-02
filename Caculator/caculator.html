@@ -1,0 +1,75 @@
+<!--功能说明：
+1.可以输入负数，除了第一个，其余需用括号括起来
+2.数字以0开头会判定为不规范
+3.不支持同时输入多个正号、负号
+4.增加了精度选择-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >简单计算器</title>
+    <link rel="icon" type="image/gif" href="./image/icon.jpg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="calculator.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container">
+    <h1>简单计算器</h1>
+    <div class="calculator">
+        <div class="output">
+            <span id="error">用得开心哦</span>
+            <input type="text" name = "equation" id = "screen" value = "" onfocus = "this.blur();"/>
+        </div>
+        <div class="func_button">
+            <div class="buttons">
+                <input class="buttonStyle" type="button" value="7" onclick="getInput(this.value)">
+                <input class="buttonStyle" type="button" value="8" onclick="getInput(this.value)">
+                <input class="buttonStyle" type="button" value="9" onclick="getInput(this.value)">
+                <input class="buttonStyle" type="button" value="/" onclick="getInput(this.value)">
+            </div>
+            <div class="buttons">
+                <input class="buttonStyle" type="button" value="4" onclick="getInput(this.value)">
+                <input class="buttonStyle" type="button" value="5" onclick="getInput(this.value)">
+                <input class="buttonStyle" type="button" value="6" onclick="getInput(this.value)">
+                <input class="buttonStyle" type="button" value="*" onclick="getInput(this.value)">
+            </div>
+            <div class="buttons">
+                <input class="buttonStyle" type="button" value="1" onclick="getInput(this.value)">
+                <input class="buttonStyle" type="button" value="2" onclick="getInput(this.value)">
+                <input class="buttonStyle" type="button" value="3" onclick="getInput(this.value)">
+                <input class="buttonStyle" type="button" value="-" onclick="getInput(this.value)">
+            </div>
+            <div class="buttons">
+                <input class="buttonStyle" type="button" value="0" onclick="getInput(this.value)">
+                <input class="buttonStyle" type="button" value="." onclick="getInput(this.value)">
+                <input class="buttonStyle" type="button" value="←" onclick="Cancel()">
+                <input class="buttonStyle" type="button" value="+" onclick="getInput(this.value)">
+            </div>
+            <div class="buttons">
+                <input class="buttonStyle" type="button" value="(" onclick="getInput(this.value)">
+                <input class="buttonStyle" type="button" value=")" onclick="getInput(this.value)">
+                <input class="buttonStyle" type="button" value="CE" onclick="Clear()">
+                <input class="buttonStyle" type="button" value="=" onclick="Result()">
+            </div>
+        </div>
+    </div>
+    <div class="precision">
+        <form action="" method="get">
+            <label>精度</label>
+            <select name="accuracy" id="mySelect" onchange="defPrecision()">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </form>
+    </div>
+    <img src="./image/background.jpg" alt="background">
+</div>
+</body>
+</html>

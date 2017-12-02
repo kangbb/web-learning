@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+}
+p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 5px auto 5px auto;
+}
+.Print{
+    width: 600px;
+    height: 21px;
+    margin: auto;
+    padding: 0;
+}
+#Maze{
+    margin: 16px auto 6px auto;
+    cursor: pointer;
+    display: block;
+}
+
+#hint{
+    margin: 5px auto auto auto;
+    width: 450px;
+    height: auto;
+}
+div span{
+    font-size: 12px;
+}
+
+#wall{
+    width: 90px;
+    height: 30px;
+    margin: 10px auto 10px auto;
+    border: solid 1px gray;
+    padding: 0;
+    background-color: #EEEEEE;
+}

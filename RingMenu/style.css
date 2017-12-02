@@ -1,0 +1,248 @@
+#at-plus-container,
+#bottom-positioner,
+#info-bar,
+#control-ring li,
+#at-plus-container:hover,
+#at-plus-container:hover .apb,
+#at-plus-container:hover .icon,
+#at-plus-container:hover #bottom-positioner,
+#at-plus-container:hover #control-ring,
+#at-plus-container:hover #info-bar {
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+li {
+    list-style: none;
+}
+
+#at-plus-container {
+    position: fixed;
+    bottom: 100px;
+    left:  50%;
+
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+}
+
+#at-plus-container:hover {
+    bottom: 0;
+    left: calc(50% - 100px);
+
+    width: 200px;
+    height: 300px;
+}
+
+/*其他图标定位的参考系*/
+#bottom-positioner {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#at-plus-container:hover #bottom-positioner {
+    top: 180px;
+    left: 100px;
+}
+/*设置info相关内容的格式*/
+#info-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: rgba(0, 0, 10, .4);
+    border-radius: 50%;
+    opacity: 0;
+
+    overflow: hidden;
+}
+
+#at-plus-container:hover #info-bar {
+    top: -150px;
+    left: -50px;
+
+    width: 130px;
+    height: 130px;
+
+    opacity: 1;
+}
+
+#info-bar li img, #info-bar li span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#info-bar li span {
+    margin-left: 5px;
+}
+
+.info {
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+
+.info li {
+    position: absolute;
+    color: #ffffff;
+}
+
+.info li span {
+    font-weight: bold;
+}
+
+.user {
+    font-weight: normal;
+    font-size: 16px;
+    top: -8px;
+    left: 45px;
+}
+
+.comment {
+    font-size: 40px;
+    top: 15px;
+    left: 35px;
+}
+
+.like span, .posted span{
+    font-size: 16px;
+    color: #079E6E;
+}
+.posted {
+    bottom: 33px;
+    left: 25px;
+}
+
+.like {
+    bottom: 33px;
+    right: 20px;
+}
+
+/*设置control ring*/
+#control-ring li {
+    position: absolute;
+    top: 0;
+    left: 2px;
+
+    width: 30px;
+    height: 30px;
+
+    opacity: 0;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 10, .4);
+    background-size: 16px;
+}
+
+#at-plus-container:hover #control-ring li{
+    opacity: 1;
+}
+
+#control-ring li:hover {
+    background-color: rgba(0, 0, 20, .6);
+}
+.unread {
+    font-size: 10px;
+    position: absolute;
+    top: -4px;
+    right: -6px;
+    width: 15px;
+    height: 15px;
+
+    text-align: center;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.mask{
+    background-image: url(assets/images/nomask.png);
+}
+.history {
+    background-image: url(assets/images/history.png);
+}
+.message {
+    background-image: url(assets/images/message.png);
+}
+.setting {
+    background-image: url(assets/images/setting.png);
+}
+.sign {
+    background-image: url(assets/images/signin.png);
+}
+
+#at-plus-container:hover .mask {
+    top: -30px;
+    left: -54px;
+}
+
+#at-plus-container:hover .history {
+    top: 5px;
+    left: -65px;
+}
+
+#at-plus-container:hover .message {
+    top: 40px;
+    left: -54px;
+}
+
+#at-plus-container:hover .setting {
+    top: 60px;
+    left: -24px;
+}
+
+#at-plus-container:hover .sign {
+    top: 60px;
+    left: 16px;
+}
+.apb {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    -webkit-transition: all .3s .4s;
+    -o-transition: all .3s .4s;
+    transition: all .3s .4s;
+
+    border-radius: 50%;
+    background-color: rgba(0, 0, 60, .4);
+}
+
+#at-plus-container:hover .apb {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: rgba(48,63,159,1);
+
+    top: -10px;
+    left: -10px;
+}
+
+.icon {
+    background-image: url(assets/images/atplus_white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: all .3s .4s;
+    -o-transition: all .3s .4s;
+    transition: all .3s .4s;
+}
+
+#at-plus-container:hover .icon {
+    background-image: url(assets/images/atplus_green.png);
+    background-size: 40px;
+}
