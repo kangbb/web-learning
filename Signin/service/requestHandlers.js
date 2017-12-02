@@ -112,7 +112,6 @@ function query(para){
     }else{
         data = JSON.parse(data);
     }
-    console.log(data);
     for(var item in data) {
         is_equal = true;
         for (var key in para) {
@@ -145,6 +144,7 @@ function query(para){
             return data[item];
         }
     }
+    return null;
 }
 
 function get_file_content(filePath) {
