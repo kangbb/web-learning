@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/undefined">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  </head>
+  <body>
+    <div class="user_info">
+      <h1>用户登陆</h1>
+      <form id="signin" method="post">
+        <div class="username">
+          <label for="username">用户名</label>
+          <input id="username" name="username" value>
+          <p class="err"></p>
+        </div>
+        <div class="password">
+          <label for="password">密码</label>
+          <input id="password" name="password" type="password">
+          <p class="err"></p>
+        </div>
+        <div class="buttons">
+          <input class="button reset" type="reset" value="清除">
+          <input class="button reset" type="submit" value="登陆">
+        </div>
+        <div class="switch"><a class="switch-signin-signup" href="/signup">注册</a></div>
+      </form>
+    </div>
+    <script type="text/javascript" src="/javascripts/validator.js"></script>
+    <script type="text/javascript" src="/javascripts/signin.js"></script>
+  </body>
+</html>

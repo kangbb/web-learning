@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/undefined">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  </head>
+  <body>
+    <div class="user_info">
+      <h1>注册用户</h1>
+      <form id="signup" method="post">
+        <div class="username">
+          <label for="username">用户名</label>
+          <input id="username" name="username">
+          <p class="err"></p>
+        </div>
+        <div class="sid">
+          <label for="sid">学号</label>
+          <input id="sid" name="sid">
+          <p class="err"></p>
+        </div>
+        <div class="phone">
+          <label for="phone">电话</label>
+          <input id="phone" name="phone">
+          <p class="err"></p>
+        </div>
+        <div class="email">
+          <label for="email">电话</label>
+          <input id="email" name="email">
+          <p class="err"></p>
+        </div>
+        <div class="buttons">
+          <input class="button reset" type="reset" value="重置">
+          <input class="button reset" type="submit" value="提交">
+        </div>
+      </form>
+      <script type="text/javascript" src="/javascripts/validator.js"></script>
+      <script type="text/javascript" src="/javascripts/signup.js"></script>
+    </div>
+  </body>
+</html>

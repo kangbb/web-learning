@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  div.user_info
+    h1 用户详情
+
+    ul.lab 用户名
+    ul.info #{user.username}
+
+    ul.lab 学号
+    ul.info #{user.sid}
+
+    ul.lab 电话
+    ul.info #{user.phone}
+
+    ul.lab 邮箱
+    ul.info #{user.email}

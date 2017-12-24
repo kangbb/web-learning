@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  div.user_info
+    h1 用户注册
+    form(id='signup' method='post')
+      div.username
+        label(for='username') 用户名
+        input(id='username' name='username' value=user['username'])
+        p.err #{error['username']}
+
+      div.password
+        label(for='password') 密码
+        input(id='password' name='password' type='password' value=user['password'])
+        p.err #{error['password']}
+
+      div.repeat-password
+        label(for='repeat-password') 确认密码
+        input(id='repeat-password' name='repeat-password' type='password' value=user['repeat-password'])
+        p.err #{error['password']}
+
+      div.sid
+        label(for='sid') 学号
+        input(id='sid' name='sid' value=user['sid'])
+        p.err #{error['sid']}
+
+      div.phone
+        label(for='phone') 电话
+        input(id='phone' name='phone' value=user['phone'])
+        p.err #{error['phone']}
+
+      div.email
+        label(for='email') 邮箱
+        input(id='email' name='email' value=user['email'])
+        p.err #{error['email']}
+
+      div.buttons
+        input.button.reset(type='reset' value='重置')
+        input.button.reset(type='submit' value='提交')
+      div.switch
+        a.switch-signin-signup(href='/signin') 登陆
+    script(type='text/javascript' src='/javascripts/validator.js')
+    script(type='text/javascript' src='/javascripts/signup.js')

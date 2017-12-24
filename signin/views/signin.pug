@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div.user_info
+    h1 用户登陆
+    form(id='signin' method='post')
+      div.username
+        label(for='username') 用户名
+        input(id='username' name='username' value=user['username'])
+        p.err #{error}
+
+      div.password
+        label(for='password') 密码
+        input(id='password' name='password' type='password' value=user['password'])
+        p.err #{error}
+
+      div.buttons
+        input.button.reset(type='reset' value='清除')
+        input.button.reset(type='submit' value='登陆')
+      div.switch
+        a.switch-signin-signup(href='/signup') 注册
+  script(type='text/javascript' src='/javascripts/validator.js')
+  script(type='text/javascript' src='/javascripts/signin.js')
