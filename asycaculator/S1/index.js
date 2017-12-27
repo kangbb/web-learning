@@ -8,10 +8,10 @@ $(function () {
         "sign": true
     };
     var click_enable = true;
+
     $('li').click(function () {
         if (state[this.id] && click_enable) {
-            $(this).children().attr('class', 'read');
-            $(this).children().text('...');
+            $(this).children().removeClass('unread').addClass('read').text('...');
 
             state[this.id] = false;
             click_enable = false;
@@ -32,36 +32,33 @@ $(function () {
         }
     });
     $('#info-bar').click(function () {
-        var flag = true;
         var result = 0;
-        if (click_enable) {
-            for (var key in state) {
-                if (state[key]) flag = false;
+        if (click_enable && $(this).hasClass('main_enable')) {
+            for (var i = 1; i < 6; i++) {
+                result += parseInt($('#bubble' + i).text());
             }
-            if (flag) {
-                for (var i = 1; i < 6; i++) {
-                    result += parseInt($('#bubble' + i).text());
-                }
-                $(this).children().text(result);
+            $('#info-bar').children().text(result);
 
-                for (var key in state) {
-                    state[key] = true;
-                }
-                changeEnable();
+            for (var key in state) {
+                state[key] = true;
             }
+            $('#info-bar').removeClass('main_enable').addClass('main_disable');
+            changeEnable();
         }
     });
     $('#at-plus-container').mouseleave(function () {
         if (requireArray.length > 0) {
-            for (var i = 0; i < requireArray.length; i++) {
+            for (var i = requireArray.length - 1; i >= 0; i--) {
                 if (requireArray[i]) requireArray[i].abort();
+                requireArray.pop();
             }
         }
-        $('span').text('');
-        $('span').attr('class', 'unread');
+
+        $('span').removeClass('read').addClass('unread').text('');
         for (var key in state) {
             state[key] = true;
         }
+        $('#info-bar').removeClass('main_enable').addClass('main_disable').children().text('');
         changeEnable();
     });
 
@@ -70,15 +67,22 @@ $(function () {
     };
 
     function changeEnable() {
+        var flag = true;
         for (var key in state) {
-            if (state[key]) $('#' + key).attr('class', 'enable');
+            if (state[key]) {
+                $('#' + key).removeClass('disable').addClass('enable');
+                flag = false
+            }
+        }
+        if(flag){
+            $('#info-bar').removeClass('main_disable').addClass('main_enable');
         }
         click_enable = true;
     }
 
     function changeDisable() {
         for (var key in state) {
-            $('#' + key).attr('class', 'disable');
+            $('#' + key).removeClass('enable').addClass('disable');
         }
     }
 });

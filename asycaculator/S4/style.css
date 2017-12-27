@@ -1,0 +1,229 @@
+#at-plus-container,
+#bottom-positioner,
+#order,
+#info-bar,
+#control-ring li,
+#at-plus-container:hover,
+#at-plus-container:hover .apb,
+#at-plus-container:hover .icon,
+#at-plus-container:hover #bottom-positioner,
+#at-plus-container:hover #order,
+#at-plus-container:hover #control-ring,
+#at-plus-container:hover #info-bar {
+    -webkit-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+li {
+    list-style: none;
+}
+
+#at-plus-container {
+    position: fixed;
+    bottom: 150px;
+    left:  50%;
+
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+}
+
+#at-plus-container:hover {
+    bottom: 50px;
+    left: calc(50% - 100px);
+
+    width: 200px;
+    height: 300px;
+}
+
+/*其他图标定位的参考系*/
+#bottom-positioner {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#at-plus-container:hover #bottom-positioner {
+    top: 180px;
+    left: 100px;
+}
+#order{
+    margin: 0 auto 10px;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgba(210, 105, 30, 0.3);
+    opacity: 0;
+}
+
+#at-plus-container:hover #order{
+    position: relative;
+    bottom: 200px;
+    margin-left: -40px;
+    opacity: 1;
+}
+/*设置info相关内容的格式*/
+#info-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    opacity: 0;
+
+    overflow: hidden;
+}
+
+#at-plus-container:hover #info-bar {
+    top: -150px;
+    left: -50px;
+
+    width: 130px;
+    height: 130px;
+
+    opacity: 1;
+}
+#at-plus-container:hover .main_enable, .main_disable{
+    opacity: 1;
+}
+
+p{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 50px;
+    color: #59C193;
+}
+
+/*设置control ring*/
+#control-ring li {
+    position: absolute;
+    top: 0;
+    left: 2px;
+
+    width: 30px;
+    height: 30px;
+
+    opacity: 0;
+    border-radius: 50%;
+    background-size: 16px;
+
+    font-size: 22px;
+    font-weight: bold;
+    color: #59C193;
+    text-align: center;
+}
+#at-plus-container:hover #control-ring li{
+    opacity: 1;
+}
+
+#bubble1, #bubble2, #bubble3, #bubble4, #bubble5{
+    font-size: 10px;
+    position: absolute;
+    top: -4px;
+    right: -6px;
+    width: 15px;
+    height: 15px;
+
+    text-align: center;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: red;
+}
+
+#at-plus-container:hover #mask {
+    top: -30px;
+    left: -54px;
+}
+
+#at-plus-container:hover #hist {
+    top: 5px;
+    left: -65px;
+}
+
+#at-plus-container:hover #message {
+    top: 40px;
+    left: -54px;
+}
+
+#at-plus-container:hover #setting {
+    top: 60px;
+    left: -24px;
+}
+
+#at-plus-container:hover #sign {
+    top: 60px;
+    left: 16px;
+}
+.apb {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    -webkit-transition: all .3s .4s;
+    -o-transition: all .3s .4s;
+    transition: all .3s .4s;
+
+    border-radius: 50%;
+    background-color: rgba(0, 0, 60, .4);
+}
+
+#at-plus-container:hover .apb {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: rgba(48,63,159,1);
+
+    top: -10px;
+    left: -10px;
+}
+
+.icon {
+    background: url(images/atplus_white.png) no-repeat center;
+    background-size: 25px;
+
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: all .3s .4s;
+    -o-transition: all .3s .4s;
+    transition: all .3s .4s;
+}
+
+#at-plus-container:hover .icon {
+    background-image: url(images/atplus_green.png);
+    background-size: 40px;
+}
+
+/*-----------------------------------------------*/
+.enable{
+    background: rgba(48,63,159,1) no-repeat center;
+}
+.enable:hover{
+    background: #489AF2 no-repeat center;
+}
+.disable{
+    background-color: rgba(0, 0, 10, .4);
+}
+.main_enable{
+    background-color: rgba(0, 0, 10, .4);
+}
+.main_enable:hover{
+    background-color: rgba(0, 0, 10, .6);
+}
+.main_disable{
+    background-color: rgba(0, 0, 10, .4);
+}
+
+.unread{
+    visibility: hidden;
+}
+.read{
+    visibility: visible;
+}
