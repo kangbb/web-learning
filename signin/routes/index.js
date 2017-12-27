@@ -29,12 +29,12 @@ module.exports = function (db) {
     });
 
     /* GET signup page. */
-    router.get('/signup', function(req, res, next){
+    router.get('/regist', function(req, res, next){
         res.render('signup', {title: '注册', url: 'signup.css', user: {}, error: {}});
     });
 
     /* Post show detail. */
-    router.post('/signup', function(req, res, next){
+    router.post('/regist', function(req, res, next){
         var user = req.body;
         userManager.checkUser(user)
             .then(userManager.createUser)
