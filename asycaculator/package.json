@@ -1,0 +1,14 @@
+{
+  "name": "asycaculator",
+  "version": "1.0.0",
+  "description": "a simple asynchronous javascript",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "asycaculator"
+  ],
+  "author": "kiloveyousmile@gmail.com",
+  "license": "ISC"
+}
